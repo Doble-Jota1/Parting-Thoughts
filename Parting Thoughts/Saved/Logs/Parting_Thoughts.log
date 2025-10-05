@@ -1157,3 +1157,7 @@ LogConfig: Set CVar [[r.Shadow.DetectVertexShaderLayerAtRuntime:1]]
 [2025.10.05-15.12.48:592][  9]LogEOSSDK: LogEOS: SDK Config Product Update Request Successful, Time: 5.342054
 [2025.10.05-15.12.48:594][  9]LogEOSSDK: LogEOS: SDK Config Data - Watermark: -227189215
 [2025.10.05-15.12.48:594][  9]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 5.342054, Update Interval: 302.931610
+[2025.10.05-15.13.05:092][478]LogWindowsTextInputMethodSystem: Activated input method: 简体中文(中国大陆) - 微软拼音 (TSF IME).
+[2025.10.05-15.13.11:498][221]LogSlate: Window 'Content Browser 1' being destroyed
+[2025.10.05-15.13.11:503][221]LogViewport: Scene viewport resized to 1855x490, mode Windowed.
+[2025.10.05-15.13.16:834][820]LogViewport: Scene viewport resized to 1855x808, mode Windowed.
