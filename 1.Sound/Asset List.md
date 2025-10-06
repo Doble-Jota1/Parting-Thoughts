@@ -20,7 +20,7 @@
 
 
 
-4\. Memory 3: Chasing butterfly 
+4\. Memory 3: Chasing butterfly  
 
 
 
@@ -52,13 +52,13 @@
 
 
 
-6\. Train station outro (melancholy)
+6\. Train station outro (melancholy)  
 
 
 
 
 
-**Sound Effects:**
+**Sound Effects:**  
 
 
 
