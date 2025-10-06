@@ -1711,3 +1711,50 @@ LogConfig: Set CVar [[r.Shadow.DetectVertexShaderLayerAtRuntime:1]]
 [2025.10.06-08.19.15:780][780]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 61500.800781
 [2025.10.06-08.19.16:780][783]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
 [2025.10.06-08.19.16:780][783]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 61501.464844, Update Interval: 333.974426
+[2025.10.06-08.25.38:456][928]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 61881.992188
+[2025.10.06-08.25.39:456][931]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.10.06-08.25.39:456][931]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 61882.656250, Update Interval: 355.724365
+[2025.10.06-08.32.21:800][138]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 62283.761719
+[2025.10.06-08.32.22:799][141]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.10.06-08.32.22:799][141]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 62284.425781, Update Interval: 313.019196
+[2025.10.06-08.38.16:810][203]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 62637.378906
+[2025.10.06-08.38.17:810][206]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.10.06-08.38.17:810][206]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 62638.042969, Update Interval: 333.791321
+[2025.10.06-08.44.25:823][310]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 63004.949219
+[2025.10.06-08.44.26:823][313]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.10.06-08.44.26:823][313]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 63005.613281, Update Interval: 307.225555
+[2025.10.06-08.50.08:168][337]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 63345.957031
+[2025.10.06-08.50.09:168][340]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.10.06-08.50.09:168][340]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 63346.621094, Update Interval: 311.603760
+[2025.10.06-08.56.14:508][436]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 63710.867188
+[2025.10.06-08.56.15:508][439]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.10.06-08.56.15:508][439]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 63711.531250, Update Interval: 306.396057
+[2025.10.06-09.02.03:852][484]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 64058.847656
+[2025.10.06-09.02.04:852][487]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.10.06-09.02.04:852][487]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 64059.511719, Update Interval: 316.763824
+[2025.10.06-09.08.19:865][612]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 64433.386719
+[2025.10.06-09.08.20:865][615]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.10.06-09.08.20:865][615]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 64434.050781, Update Interval: 313.132721
+[2025.10.06-09.14.04:547][646]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 64776.722656
+[2025.10.06-09.14.05:547][649]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.10.06-09.14.05:547][649]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 64777.386719, Update Interval: 320.455322
+[2025.10.06-09.16.46:250][131]LogDerivedDataCache: C:/Users/JJ/AppData/Local/UnrealEngine/Common/DerivedDataCache: Maintenance finished in +00:02:05.030 and deleted 0 files with total size 0 MiB and 0 empty folders. Scanned 68285 files in 59854 folders with total size 591 MiB.
+[2025.10.06-09.20.21:563][777]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 65152.269531
+[2025.10.06-09.20.22:563][780]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.10.06-09.20.22:563][780]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 65152.933594, Update Interval: 318.223206
+[2025.10.06-09.26.40:581][914]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 65529.804688
+[2025.10.06-09.26.41:582][917]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.10.06-09.26.41:582][917]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 65530.468750, Update Interval: 331.028168
+[2025.10.06-09.33.11:595][ 87]LogEOSSDK: LogEOS: Updating Product SDK Config, Time: 65923.789062
+[2025.10.06-09.33.12:595][ 90]LogEOSSDK: LogEOS: SDK Config Product Update Request Completed - No Change
+[2025.10.06-09.33.12:595][ 90]LogEOSSDK: LogEOS: ScheduleNextSDKConfigDataUpdate - Time: 65924.460938, Update Interval: 317.886292
+[2025.10.06-09.33.12:989][ 90]LogAudioMixer: Warning: FMixerPlatformXAudio2: Changing default audio render device to new device: Role=Console, DeviceName=XV271U M3 (NVIDIA High Definition Audio), InstanceID=1
+[2025.10.06-09.33.13:009][ 90]LogAudioMixer: Display: FMixerNullCallback: Simulating a h/w device callback at [21ms], ThreadID=200192
+[2025.10.06-09.33.13:626][ 91]LogAudioMixer: Display: Successful Swap new Device is (NumChannels=2, SampleRate=48000, DeviceID={0.0.0.00000000}.{9bc2851a-0957-409e-95c5-ecf8d95cd05d}, Name=XV271U M3 (NVIDIA High Definition Audio)), Reason=FMixerPlatformXAudio2::OnDefaultRenderDeviceChanged, InstanceID=1, DurationMS=132.42
+[2025.10.06-09.33.13:626][ 91]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=1
+[2025.10.06-09.33.13:628][ 91]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=1
+[2025.10.06-09.33.23:158][120]LogAudioMixer: Warning: FMixerPlatformXAudio2: Changing default audio render device to new device: Role=Console, DeviceName=LG ULTRAGEAR (NVIDIA High Definition Audio), InstanceID=1
+[2025.10.06-09.33.24:625][120]LogAudioMixer: Display: FMixerNullCallback: Simulating a h/w device callback at [21ms], ThreadID=200192
+[2025.10.06-09.33.24:947][121]LogAudioMixer: Display: Successful Swap new Device is (NumChannels=2, SampleRate=48000, DeviceID={0.0.0.00000000}.{193492e7-5ca2-4e5f-8b04-ec33e67c9beb}, Name=LG ULTRAGEAR (NVIDIA High Definition Audio)), Reason=FMixerPlatformXAudio2::OnDefaultRenderDeviceChanged, InstanceID=1, DurationMS=76.95
+[2025.10.06-09.33.24:947][121]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=2, Samples=2048, InstanceID=1
+[2025.10.06-09.33.24:949][121]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=1
