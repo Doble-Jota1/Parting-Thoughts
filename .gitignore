@@ -56,10 +56,6 @@ Build/*/**
 # Built data for maps
 *_BuiltData.uasset
 
-GameplayTests/Saved/*
-GameplayTests/Intermediate/*
-GameplayTests/DerivedDataCache/*
-
 PartingThoughts/Saved/*
 PartingThoughts/Intermediate/*
 PartingThoughts/DerivedDataCache/*
