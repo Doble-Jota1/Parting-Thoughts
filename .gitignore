@@ -56,6 +56,9 @@ Build/*/**
 # Built data for maps
 *_BuiltData.uasset
 
+PartingThoughts/Build/*
 PartingThoughts/Saved/*
 PartingThoughts/Intermediate/*
 PartingThoughts/DerivedDataCache/*
+
+Builds/*
