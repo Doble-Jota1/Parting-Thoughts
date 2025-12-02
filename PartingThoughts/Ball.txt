@@ -1,0 +1,136 @@
+// --- Matter.js aliases ---
+let Engine = Matter.Engine;
+let World  = Matter.World;
+let Bodies = Matter.Bodies;
+let Body   = Matter.Body;
+
+let engine, world;
+
+// Game objects
+let ball;
+let platform;
+
+// Visual sizes
+const BALL_RADIUS = 20;
+const PLATFORM_WIDTH = 160;
+const PLATFORM_HEIGHT = 16;
+
+let platformBaseX;   // center x controlled by mouse
+const PLATFORM_Y_FACTOR = 0.7; // height of the platform
+
+let gameOver = false;
+let startTime;
+
+// Spacebar state
+let spaceHeld = false;
+
+function setup() {
+  createCanvas(800, 600);
+  
+  // Create engine & world
+  engine = Engine.create();
+  world = engine.world;
+  world.gravity.y = 1.0; // how fast things fall
+  
+  // Create the red ball (dynamic)
+  ball = Bodies.circle(width / 2, 80, BALL_RADIUS, {
+    restitution: 0.4,      // bounciness
+    friction: 0.02,        // low friction so it can roll/slide easily
+    frictionAir: 0.001
+  });
+  
+  // Initial platform position (mouse will control it later)
+  platformBaseX = width / 2;
+  let platformY = height * PLATFORM_Y_FACTOR;
+
+  // Platform (static, we move it manually each frame)
+  platform = Bodies.rectangle(platformBaseX, platformY, PLATFORM_WIDTH, PLATFORM_HEIGHT, {
+    isStatic: true,
+    friction: 0.2          // a bit of friction so the ball "rolls" not just slides
+  });
+
+  // Invisible ground so the ball doesn't fall forever
+  let ground = Bodies.rectangle(width / 2, height + 50, width * 2, 100, {
+    isStatic: true,
+  });
+
+  World.add(world, [ball, platform, ground]);
+
+  startTime = millis();
+  gameOver = false;
+}
+
+function draw() {
+  background(0); // black background
+
+  if (!gameOver) {
+    // Update physics
+    Engine.update(engine, 1000 / 60);
+
+    // Time since start (seconds)
+    let t = (millis() - startTime) / 1000.0;
+
+    // --- Mouse controls platform horizontal position ---
+    // If mouse is inside canvas, follow it; otherwise keep last position
+    if (mouseX >= 0 && mouseX <= width) {
+      platformBaseX = mouseX;
+    }
+
+    // Clamp platform within screen
+    const halfW = PLATFORM_WIDTH / 2;
+    platformBaseX = constrain(platformBaseX, halfW, width - halfW);
+
+    // --- Shaking logic: grows stronger over time ---
+    // Amplitude increases with time, but capped
+    let baseShakeAmp   = min(80, t * 5);               // horizontal shake amplitude
+    let baseAngleAmp   = radians(min(30, t * 3));      // rotation amplitude (up to ~30°)
+
+    // If space is held, temporarily reduce shaking (player "stabilizes" the platform)
+    let ampFactor = spaceHeld ? 0.25 : 1.0;            // 25% shake when focusing
+    let shakeAmp  = baseShakeAmp * ampFactor;
+    let angleAmp  = baseAngleAmp * ampFactor;
+
+    let shakeX    = sin(t * 4.0) * shakeAmp;           // horizontal shake
+    let shakeAngle = sin(t * 6.0) * angleAmp;          // rotational shake
+
+    // Final platform position + angle
+    let targetX = platformBaseX + shakeX;
+    let targetY = height * PLATFORM_Y_FACTOR;
+
+    Body.setPosition(platform, { x: targetX, y: targetY });
+    Body.setAngle(platform, shakeAngle);
+
+    // --- Game over condition: ball falls below bottom of canvas ---
+    if (ball.position.y - BALL_RADIUS > height) {
+      gameOver = true;
+    }
+  }
+
+  // --- Draw ball (red) ---
+  push();
+  noStroke();
+  fill(255, 0, 0);
+  translate(ball.position.x, ball.position.y);
+  circle(0, 0, BALL_RADIUS * 2);
+  pop();
+
+  // --- Draw platform (white, tinted when space is held) ---
+  push();
+  noStroke();
+  fill(255);
+  translate(platform.position.x, platform.position.y);
+  rotate(platform.angle);
+  rectMode(CENTER);
+  rect(0, 0, PLATFORM_WIDTH, PLATFORM_HEIGHT);
+  pop();
+}
+
+// --- Keyboard controls for space + restart ---
+function keyPressed() {
+
+
+  // Restart game
+  if (key === 'r' || key === 'R') {
+    setup();
+  }
+}
